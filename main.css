@@ -46,7 +46,6 @@ html {
 }
 
 .gcfrHeader h3 a span {
-  /*display: block;*/
   font-weight: 400;
   color: rgb(100 100 100);
 }
@@ -113,11 +112,9 @@ html {
 }
 
 .hero-btn1 {
-  /*margin-top: 1rem;*/
   width: fit-content;
   background: white;
   padding: 0.7rem;
-  /*border-radius: .5rem;*/
   display: block;
   color: rgb(44 45 45 / 80%);
 }
@@ -128,11 +125,9 @@ html {
 }
 
 .hero-btn2 {
-  /*margin-top: 1rem;*/
   width: fit-content;
   background: rgb(44 45 45 / 80%);
   padding: 0.7rem;
-  /*border-radius: .5rem;*/
   display: block;
   color: white;
 }
@@ -158,7 +153,6 @@ html {
 }
 
 .gcfr_mySkills h1 {
-  /*font-size: 30px;*/
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -243,7 +237,6 @@ html {
 }
 
 .gcfr_myServices h1 {
-  /*font-size: 30px;*/
   margin-top: 2rem;
 
   margin-bottom: 1rem;
@@ -306,7 +299,6 @@ html {
 }
 
 .service-items .item ul li:nth-child(2) {
-  /*font-weight: 500;*/
   font-size: 16px;
   line-height: 1.2;
   margin-bottom: 3rem;
@@ -399,8 +391,8 @@ html {
   margin-bottom: 2rem;
 }
 
+
 .about-img img {
-  width: 300px;
   border-top-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
   margin: auto;
@@ -408,22 +400,8 @@ html {
   z-index: 1;
   position: relative;
   text-align: center;
-  /*width: 100%;*/
+  width: 100%;
 }
-
-/*.left {*/
-/*    !*right: 0;*!*/
-/*    !*left: 0;*!*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.left img {*/
-/*    right: 0;*/
-/*    text-align: right;*/
-/*    display: flex;*/
-/*    justify-content: right;*/
-/*}*/
 
 .about-img::after {
   content: "";
@@ -672,6 +650,11 @@ html {
     align-items: center;
   }
 
+
+    .about-img img {
+        width: 300px;
+    }
+
   .about-info {
     width: 100%;
     max-width: 50%;
@@ -691,7 +674,7 @@ html {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    padding: 0 calc(50% - 140px); /* 140px = half of card width (280px/2) */
+    padding: 0 calc(50% - 140px);
   }
 
   .experience-items .item {
@@ -720,11 +703,10 @@ html {
     to {
       transform: translateX(
         -50%
-      ); /* exactly half, since content is duplicated */
+      );
     }
   }
 
-  /* Pause on hover */
   .experience-track:hover .experience-items {
     animation-play-state: paused;
   }
@@ -800,7 +782,7 @@ html {
     justify-content: space-between;
     max-width: 85.75%;
     margin: auto;
-    padding: unset; /* 140px = half of card width (280px/2) */
+    padding: unset;
   }
 
   .experience-items .item {
@@ -829,7 +811,7 @@ html {
       transform: unset;
     }
     to {
-      transform: unset; /* exactly half, since content is duplicated */
+      transform: unset;
     }
   }
 
@@ -886,9 +868,4 @@ html {
     margin-right: -2rem;
   }
 
-  /*.copyright-marquee p {*/
-  /*    display: inline-block;*/
-  /*    margin: 0;*/
-  /*    animation: scrollCopyright 15s linear infinite;*/
-  /*}*/
 }
